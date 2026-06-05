@@ -2,20 +2,30 @@
 
 A Multi-Stage AI App Compiler built using FastAPI.
 
-## Features
+## Pipeline
 
-- Intent Extraction
-- System Design
-- Schema Generation
-- Validation
-- Repair
+1. Intent Extraction
+2. System Design
+3. Schema Generation
+4. Validation
+5. Repair
 
-## Supported Apps
+## Supported Applications
 
 - Chat Application
 - CRM
 - Hospital Management System
 - E-Commerce
+
+## API Endpoint
+
+POST /generate
+
+Example Request:
+
+{
+  "prompt": "Build a CRM application"
+}
 
 ## Run
 
