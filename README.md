@@ -1,14 +1,14 @@
 # AI App Compiler
 
-A Multi-Stage AI App Compiler built using FastAPI that converts natural language prompts into structured application specifications.
+A Multi-Stage AI App Compiler built using FastAPI.
 
-## Features
+## Pipeline
 
-- Intent Extraction
-- System Design Generation
-- Schema Generation
-- Validation Engine
-- Repair Engine
+1. Intent Extraction
+2. System Design
+3. Schema Generation
+4. Validation
+5. Repair
 
 ## Supported Applications
 
@@ -17,48 +17,15 @@ A Multi-Stage AI App Compiler built using FastAPI that converts natural language
 - Hospital Management System
 - E-Commerce
 
-## Pipeline
-
-### Stage 1: Intent Extraction
-Identifies application type and required features.
-
-### Stage 2: System Design
-Generates entities and user roles.
-
-### Stage 3: Schema Generation
-Creates:
-- UI Schema
-- API Schema
-- Database Schema
-- Authentication Schema
-
-### Stage 4: Validation
-Checks generated schemas for completeness and consistency.
-
-### Stage 5: Repair
-Automatically fixes missing or invalid components.
-
 ## API Endpoint
 
 ### POST /generate
 
-Example Request:
+### Example Request
 
 ```json
 {
   "prompt": "Build a CRM application"
-}
-```
-
-Example Response:
-
-```json
-{
-  "stage_1_intent": {},
-  "stage_2_design": {},
-  "stage_3_schema": {},
-  "stage_4_validation": {},
-  "stage_5_repair": {}
 }
 ```
 
@@ -85,4 +52,5 @@ http://127.0.0.1:8000/docs
 ## Author
 
 Rakesh Kore
+
 GitHub: https://github.com/Rk151103
